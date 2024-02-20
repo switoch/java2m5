@@ -14,13 +14,15 @@ public class Fibonacci {
     }
 
     public static int iterativeF(int n) {
-        List<Integer> arr = new ArrayList<>(n);
-        arr.add(0);
-        arr.add(1);
+        int current = 1;
+        int prev = 1;
+        int preprev = 0;
         for (int i = 2; i <= n; i++) {
-            arr.add(i, arr.get(i - 1) + arr.get(i - 2));
+            current = preprev + prev;
+            preprev = prev;
+            prev = current;
         }
-        return arr.get(n);
+        return current;
     }
 
     public static int dynamicF(int n) {
