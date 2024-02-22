@@ -6,9 +6,9 @@ import java.util.Map;
 public class Fibonacci {
 
     public static void main(String[] args) {
-        System.out.println("F iterative = " + iterativeF(20));
-        System.out.println("F dynamic = " + dynamicF(20));
-        System.out.println("F recursive = " + recursiveF(20));
+        System.out.println("F iterative = " + iterativeF(30));
+        System.out.println("F dynamic = " + dynamicF(30));
+        System.out.println("F recursive = " + recursiveF(30));
     }
 
     public static int iterativeF(int n) {
